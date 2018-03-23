@@ -1,0 +1,9 @@
+no yes no
+3
+0.05 0.99 1000
+0.10 0.99 1000
+0.20 0.99 1000
+2
+Pentagram-mid_train.txt Pentagram-mid_test.txt output_1.txt
+Ring-mid_train.txt Ring-mid_test.txt output_2.txt
+5

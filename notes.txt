@@ -1,0 +1,13 @@
+The purpose of the new implementation
+
+Besides other cleaning up, a purpose of this new implementation to make it really have V-detector's applicability to
+data type other than real-valued vectors.
+
+The point, or data item, only needs to have a 'comparable' distance between any two points. 
+This distance still should have triangle property:
+	d(A,B)+d(B,C)>d(A,C)
+However, to make the definition of distance more generic, 
+(1) the operation of subtraction is not required, so the point-wise is not supported
+(2) the operation of addition is not required, so the constant size is not supported
+Those changes limit the variety of V-detector, but bring out the more important strength of V-detector. 
+Constant size is especially not necessary to keep because it was introduced for comparison in the first place.   
